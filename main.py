@@ -20,11 +20,11 @@ lan = st.sidebar.selectbox(
 )
 
 if lan == "EN":
-    csv_path = './data/EN.csv'
+    csv_path = './EN.csv'
     df = pd.read_csv(csv_path)
 
 if lan=='KR':
-    csv_path = './data/KR.csv'
+    csv_path = './KR.csv'
     df = pd.read_csv(csv_path, encoding='cp949')
 
 if model == "gpkt-3.5-turbo-0125":
